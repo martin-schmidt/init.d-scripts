@@ -1,0 +1,6 @@
+#!/bin/sh
+LOGDIR=/var/log/dsniff/
+mkdir /var/log/dsniff/ > /dev/null 2>&1
+ln -s /home/mschmidt/src/init.d-scripts/dsniff-daemon/dsniff-daemon.sh /usr/sbin/dsniff-daemon
+ln -s /home/mschmidt/src/init.d-scripts/dsniff-daemon/dsniff-daemon.init /etc/init.d/dsniff-daemon
+ln -s /home/mschmidt/src/init.d-scripts/dsniff-daemon/dsniff-daemon.conf /etc/dsniff-daemon.conf

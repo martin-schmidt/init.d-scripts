@@ -1,0 +1,6 @@
+#!/bin/sh
+LOGDIR=/var/log/dsniff/
+rmdir $LOGDIR
+rm /usr/sbin/dsniff-daemon
+rm /etc/init.d/dsniff-daemon
+rm /etc/dsniff-daemon.conf
